@@ -6,7 +6,20 @@ Try running it for
 3. Sum from 1-1000000000
 Hint - use Date class exposed in JS
 */
+const { log } = require("console");
 
+const sum = (n) => {
+  let s = 0;
+  for (let i = 1; i <= n; i++) {
+    s += i;
+  }
+  return s;
+};
+ 
 function calculateTime(n) {
-    return 0.01;
+    let startTime =  new Date() 
+sum(1000000);
+let endTime = new Date() 
+let result = endTime-startTime
+    return  result;
 }

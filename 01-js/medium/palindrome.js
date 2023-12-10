@@ -6,8 +6,18 @@
   - `npm run test-palindrome`
 */
 
+
 function isPalindrome(str) {
-  return true;
+  let str1= [...str].reverse().join('')
+  if(str===str1){
+    console.log("true")
+  }
+  else{
+     console.log("False")
+  }
+
 }
 
+isPalindrome("abab")
 module.exports = isPalindrome;
+
