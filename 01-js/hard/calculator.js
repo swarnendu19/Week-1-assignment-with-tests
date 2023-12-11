@@ -55,17 +55,7 @@ class Calculator {
     return this.result;
   }
 
-  calculate(expression) {
-    // Remove continuous spaces and invalid characters
-    const cleanedExpression = expression.replace(/\s+/g, '').replace(/[^0-9+\-*/().]/g, '');
-
-    try {
-      this.result = eval(cleanedExpression); // Using eval for simplicity, but be cautious with it in real-world scenarios
-      return this;
-    } catch (error) {
-      throw new Error("Invalid expression. Please provide a valid arithmetic expression.");
-    }
-  }
+ 
 }
 
 module.exports = Calculator;
